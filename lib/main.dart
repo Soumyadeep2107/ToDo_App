@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:todo_app/Screens/add_task.dart';
+import 'package:todo_app/Screens/home_demo.dart';
 import 'package:todo_app/Screens/home_page.dart';
 import 'package:todo_app/Screens/login_page.dart';
 import 'package:todo_app/Screens/otp_screen.dart';
@@ -33,7 +34,8 @@ class MyApp extends StatelessWidget {
             name: '/otpScreen',
             page: () => OTPscreen(
                   verificationId: '',
-                ))
+                )),
+        GetPage(name: '/Demo', page: () => const HomeDemo())
       ],
     );
   }

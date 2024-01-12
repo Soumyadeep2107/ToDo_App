@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:todo_app/Screens/home_demo.dart';
 import 'package:todo_app/Screens/home_page.dart';
 
 class AddTask extends StatefulWidget {
@@ -77,7 +78,7 @@ class _AddTaskState extends State<AddTask> {
                     ),
                     onPressed: () {
                       addtasktofirebase();
-                      Get.to(const Home());
+                      Get.to(const HomeDemo());
                     },
                   ))
             ],

@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:todo_app/Models/uihelpers.dart';
+import 'package:todo_app/Screens/home_demo.dart';
 import 'package:todo_app/Screens/home_page.dart';
 import 'package:todo_app/Screens/phoneauth.dart';
 import 'package:todo_app/Screens/signup_page.dart';
@@ -25,7 +26,7 @@ class _LoginPageState extends State<LoginPage> {
         usercredential = await FirebaseAuth.instance
             .signInWithEmailAndPassword(email: email, password: password)
             .then((value) {
-          Get.to(const PhoneAuth());
+          Get.to(const HomeDemo());
           return null;
         });
       } on FirebaseAuthException catch (ex) {

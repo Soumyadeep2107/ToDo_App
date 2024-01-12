@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:todo_app/Models/uihelpers.dart';
+import 'package:todo_app/Screens/home_demo.dart';
 import 'package:todo_app/Screens/home_page.dart';
 
 class OTPscreen extends StatefulWidget {
@@ -31,7 +32,7 @@ class _OTPscreenState extends State<OTPscreen> {
                 hintText: "Enter the OTP",
                 suffixIcon: const Icon(Icons.phone),
                 border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10))),
+                    borderRadius: BorderRadius.circular(20))),
           ),
         ),
         const SizedBox(height: 15),
@@ -45,7 +46,7 @@ class _OTPscreenState extends State<OTPscreen> {
                 FirebaseAuth.instance
                     .signInWithCredential(credential)
                     .then((value) {
-                  Get.to(const Home());
+                  Get.to(const HomeDemo());
                 });
               } catch (ex) {
                 return Uihelpers.CustomAlertBox(context, ex.toString());

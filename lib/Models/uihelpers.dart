@@ -13,7 +13,7 @@ class Uihelpers {
             hintText: text,
             suffixIcon: Icon(icondata),
             border:
-                OutlineInputBorder(borderRadius: BorderRadius.circular(10))),
+                OutlineInputBorder(borderRadius: BorderRadius.circular(20))),
       ),
     );
   }

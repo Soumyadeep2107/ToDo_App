@@ -27,7 +27,7 @@ class _PhoneAuthState extends State<PhoneAuth> {
                   hintText: "Enter Your Phone-Number",
                   suffixIcon: const Icon(Icons.phone),
                   border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10))),
+                      borderRadius: BorderRadius.circular(20))),
             ),
           ),
           const SizedBox(height: 10),
